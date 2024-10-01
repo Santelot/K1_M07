@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook K1-M07 - SCAMPER</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook K1-M07 - SCAMPER</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="40">40 minutos</option>
+                <option value="30">30 minutos</option>
+            </select>
+        </div>
+
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+
+        <!-- Actividad 0 -->
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('revision_materiales')">
+                <div class="title">📚 Actividad 0: Revisión de Materiales ⏰ Tiempo: N/A</div>
+                <div class="subtitle">Reproduce la DIAPOSITIVA 1 para revisar la lista de materiales que tienes que tener listos para la misión.</div>
+            </div>
+            <div id="revision_materiales" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (N/A):</strong> Reproduce la DIAPOSITIVA 1 para revisar la lista de materiales que tienes que tener listos para la misión.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 1 -->
+        <div id="activity-1" class="activity">
+            <div class="banner" onclick="toggleContent('bienvenida')">
+                <div class="title">🎉 Actividad 1: Bienvenida e Introducción ⏰ Tiempo: 1 minuto</div>
+                <div class="subtitle">Saluda a los niños e introduce la misión.</div>
+            </div>
+            <div id="bienvenida" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Reproduce la DIAPOSITIVA 2 'Code Squad' y saluda a los niños mientras muestras el equipo de Code Squad, luego introduce el tema del día y la necesidad de entrenar el cerebro para la misión.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Hola, genios! ¡Bienvenidos a una nueva misión del CODE SQUAD para innovar en las Artesanías de México! Hoy tenemos una tarea súper creativa: ¡aprender a usar la "S" de SCAMPER en una artesanía que todos conocemos de México! ¿Saben qué significa la "S" en SCAMPER? ¡Vamos a pensar en formas diferentes de SUSTITUIR partes de nuestra artesanía invitada de hoy para hacerla aún más especial! Pero antes de conocer la artesanía con la que trabajaremos, ¡vamos a preparar nuestras mentes creativas! ¿Están listos? ¡Vamos allá!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<!-- Actividad 2 -->
+<div id="activity-2" class="activity">
+    <div class="banner" onclick="toggleContent('baile_scamper')">
+        <div class="title">💃 Actividad 2: Baile de SCAMPER ⏰ Tiempo: 2 minutos</div>
+        <div class="subtitle">Guía a los niños con estos pasos para aplicar SCAMPER al baile.</div>
+    </div>
+    <div id="baile_scamper" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (2 minutos):</strong> Reproduce la DIAPOSITIVA 3 "Canción SCAMPER" y guía a los niños con estos pasos para aplicar SCAMPER al baile:
+                    <ul>
+                        <li><strong>Paso Inicial</strong> (Derecha, derecha, izquierda, izquierda): Comienza con un paso lateral básico, dos pasos a la derecha y dos a la izquierda.</li>
+                        <li><strong>Sustituir</strong> (Adelante, adelante, atrás, atrás): Cambias los pasos laterales por dos pasos adelante y dos atrás.</li>
+                        <li><strong>Combinar</strong> (Derecha adelante, izquierda atrás): Combinas los movimientos alternando un paso adelante con la derecha y uno atrás con la izquierda.</li>
+                        <li><strong>Adaptar</strong> (Pasos pequeños): Sigues con los pasos combinados, pero ahora los haces pequeños, casi como saltitos.</li>
+                        <li><strong>Proponer</strong> (Movimiento libre con las manos): Mantienes los pasos pequeños, pero ahora los niños pueden añadir movimientos libres con las manos, como quieran.</li>
+                        <li><strong>Eliminar</strong> (Solo pasos pequeños): Eliminas los movimientos de manos y vuelves a hacer solo los pasos pequeños hacia adelante y atrás.</li>
+                        <li><strong>Reorganizar</strong> (Izquierda adelante, derecha atrás): Inviertes la combinación, comenzando con izquierda adelante y derecha atrás.</li>
+                    </ul>
+                </td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Síganme para que aprendamos a bailar al estilo SCAMPER. No se preocupen si la primera vez no pueden seguir todo lo que dice la canción, para eso es esta canción, para irnos ejercitando y que cada día sea más fácil.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 3 -->
+<div id="activity-3" class="activity">
+    <div class="banner" onclick="toggleContent('planteamiento_problema')">
+        <div class="title">🛠️ Actividad 3: Planteamiento del Problema ⏰ Tiempo: 1.5 minutos</div>
+        <div class="subtitle">Introduce el video de las artesanías con las que van a trabajar y explica el reto.</div>
+    </div>
+    <div id="planteamiento_problema" class="content">
+        <table>
+            <!-- Paso 1 -->
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Reproduce la DIAPOSITIVA 4 "Desafío de Innovación" e introduce el video de las artesanías con las que vana trabajar.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Genios del CODE SQUAD! El desafió de hoy consiste en que utilicemos la "S" de nuestra metodología "SCAMPER". Pero antes de aprender a utilizar la "S" tenemos que conocer a quién vamos a ayudar.</td>
+            </tr>
+            <!-- Paso 2 -->
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Reproduce la DIAPOSITIVA 5 "Video Esferas" y al final haz algunas preguntas para corroborar que haya quedado claro lo que quiere Luz.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Muy bien, genios! Ya conocimos a Luz, la esfera mágica que vive en Chignahuapan, Puebla, y que quiere ser aún más especial. Pero antes de ayudarla, necesitamos asegurarnos de que todos tengamos claro qué haremos.<br>
+                    Primero, ¿a quién vamos a ayudar en esta misión? ¡Levanten la mano si saben la respuesta! (Esperar respuestas)<br>
+                    ¡Exacto, vamos a ayudar a Luz, la pequeña esfera mágica!<br>
+                    Ahora, ¿alguien recuerda cuál es el desafío de Luz? ¿Qué es lo que quiere lograr? (Esperar respuestas)<br>
+                    ¡Muy bien! Luz quiere encontrar una nueva forma de ser especial y diferente para alegrar aún más las navidades.<br>
+                    Y, por último, ¿qué herramienta especial vamos a usar para ayudarla a lograr su objetivo? ¿Cómo se llama la técnica mágica que aprendimos? (Esperar respuestas)<br>
+                    ¡Eso es, genios! Vamos a usar SCAMPER, y hoy nos enfocaremos en la "S", que significa Sustituir. Vamos a pensar en formas de cambiar algunas partes de Luz para que brille aún más.<br>
+                    ¿Están listos para empezar? ¡Vamos a poner nuestras mentes a trabajar y ayudar a Luz!</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 4 -->
+<div id="activity-4" class="activity">
+    <div class="banner" onclick="toggleContent('introduccion_scamper')">
+        <div class="title">🧠 Actividad 4: Introducción a la metodología SCAMPER ⏰ Tiempo: 1 minuto</div>
+        <div class="subtitle">Explica cómo hacer preguntas de innovación con "Sustituir".</div>
+    </div>
+    <div id="introduccion_scamper" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Reproduce la DIAPOSITIVA 6 'S de Sustituir' y explica cómo hacer preguntas de innovación con "Sustituir".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Hoy vamos a aprender una palabra mágica que nos ayuda a hacer cambios súper divertidos. Esa palabra es Sustituir. ¿Saben qué significa? ¡Significa cambiar algo por otra cosa! Por ejemplo, si tenemos un juguete hecho de plástico, podemos preguntarnos: "¿Por qué otro material puedo Sustituir el plástico?" ¿Qué tal si lo hacemos de madera o de tela? ¡Así podemos hacer que nuestros juguetes sean únicos y especiales! ¡Ahora vamos a conocer la fórmula para aplicar esa palabra a preguntas y así detonar innovación!</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 5 -->
+<div id="activity-5" class="activity">
+    <div class="banner" onclick="toggleContent('metodologia_qtf')">
+        <div class="title">❓ Actividad 5: Metodología QTF ⏰ Tiempo: Variable</div>
+        <div class="subtitle">Presenta el estímulo para hacer preguntas utilizando SCAMPER.</div>
+    </div>
+    <div id="metodologia_qtf" class="content">
+        <table>
+            <!-- Paso 1 -->
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Reproduce la DIAPOSITIVA 7 "Paso 1 Metodología QTF" y presenta el estímulo para hacer preguntas.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¿Recuerdan de qué está hecha esta esfera? Los niños responden: "De vidrio". ¡Exacto! La esfera está hecha de vidrio. Ahora que conocemos el MATERIAL de lo que está hecha la esfera, vamos a usar nuestra fórmula mágica de Sustituir para hacernos una pregunta.</td>
+            </tr>
+            <!-- Paso 2 -->
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Reproduce la DIAPOSITIVA 8 "Fórmula Preguntas" y explica cómo el CODE SQUAD puede hacerse preguntas para ayudar a Luz.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Genios, es hora de aprender una fórmula mágica que nos ayudará a hacer cambios increíbles! Esta es la Fórmula de Sustituir. Cada vez que queramos cambiar algo, podemos hacernos esta pregunta: '¿Por qué otro [material, color, forma] puedo Sustituir [el elemento actual]?' Por ejemplo, si nuestra esfera está hecha de vidrio, podríamos preguntar: '¿Por qué otro material puedo Sustituir el vidrio?' ¿Qué tal si fuera de madera o incluso de algodón? ¡Las posibilidades son infinitas! Ahora que ya sabemos cómo usar la fórmula, ¡vamos aplicarla para crear más preguntas para ayudar a Luz!</td>
+            </tr>
+<!-- Paso 3 -->
+<tr>
+    <td><strong>PASO 3 (3 minutos):</strong> Reproduce la DIAPOSITIVA 9 "Formulación de Preguntas" y facilita la creación de preguntas si hay bloqueo por parte de los niños. Guíalos por las partes de la esfera y sus componentes para que hagan más preguntas. Recuerda reforzar la fórmula para que formulen la pregunta con la fórmula. Ve anotando las preguntas que hacen los niños en el pizarrón.</td>
+    <td><strong>DIÁLOGO SUGERIDO:</strong> Muy bien, ahora pensemos en otras cosas que podríamos sustituir en la esfera. ¿Qué otra cosa, además del MATERIAL, se les ocurre que podamos sustituir? ¿Podemos sustituir el COLOR rojo por otro color? ¿Podemos cambiar los dibujos que tiene la esfera? ¿Podemos cambiar el anillo donde se pone el gancho?</td>
+</tr>
+
+            <!-- Paso 4 -->
+            <tr>
+                <td><strong>PASO 4 (1 minuto):</strong> Reproduce la DIAPOSITIVA 10 "Mejorar preguntas" y explica la manera en la que podemos mejorar las preguntas que ya hicimos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Genios, hicieron preguntas increíbles sobre cómo podríamos cambiar nuestra esfera de Navidad! Pero ahora, vamos a ver si podemos hacer esas preguntas aún mejores. Para eso, necesitamos entender la diferencia entre una pregunta general y una pregunta específica. Una pregunta general es cuando preguntamos algo muy amplio, como: '¿Qué colores podemos usar?'. Pero una pregunta más específica sería: '¿Podemos usar colores que brillen en la oscuridad?' ¿Ven la diferencia? ¡Vamos a practicar haciendo preguntas más específicas para hacer nuestras esferas mágicas aún más especiales!</td>
+            </tr>
+            <!-- Paso 5 -->
+            <tr>
+                <td><strong>PASO 5 (3 minutos):</strong> Reproduce la DIAPOSITIVA 11 "Ejemplo Pregunta Específica" y facilita el proceso para que los niños tomen las preguntas que ya hicieron y las vayan haciendo específicas. Ve agotando las preguntas una a una y anota las nuevas preguntas de los genios en el pizarrón.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Esta pregunta dice: '¿Por qué otro material podemos sustituir el vidrio?' ¿Podemos hacerla aún más clara o pensar en más detalles? Claro, podríamos preguntar: '¿Por qué material más fuerte o más suave podemos sustituir el vidrio?' Además de fuerte y suave, ¿qué otros aspectos puede tener nuestro material además de fuerte o suave? ¿Podría ser que se pudiera comer? ¿Cómo quedaría nuestra pregunta?</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 6 -->
+<div id="activity-6" class="activity">
+    <div class="banner" onclick="toggleContent('prototipado_esferas')">
+        <div class="title">🖍️ Actividad 6: Prototipado en Papel de Esferas ⏰ Tiempo: Variable</div>
+        <div class="subtitle">Aplica las preguntas formuladas en el diseño de la esfera.</div>
+    </div>
+    <div id="prototipado_esferas" class="content">
+        <table>
+            <!-- Paso 1 -->
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Reproduce la DIAPOSITIVA 12 "Innovando Esferas" y explica que vamos a aplicar nuestras preguntas para ayudar a Luz a ser una esfera mágica.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Muy bien CODE SQUAD, ¡ahora es el momento de convertir nuestras preguntas en una nueva esfera! Vamos a dibujar nuestra propia esfera de Navidad, pero esta vez, haremos algunos cambios usando las preguntas que inventamos.</td>
+            </tr>
+            <!-- Paso 2 -->
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Reproduce la DIAPOSITIVA 13 "Entregar Materiales" y distribuye los materiales. Asegúrate de que todos los niños tengan papel y colores para dibujar.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Aquí tienen su papel y colores. Vamos a ir paso a paso, pregunta por pregunta, haciendo un nuevo diseño de esfera para Luz.</td>
+            </tr>
+            <!-- Paso 3 -->
+            <tr>
+                <td><strong>PASO 3 (5-10 minutos):</strong> Reproduce la DIAPOSITIVA 14 "Diseñar Esfera" y ve leyendo las preguntas que hacen alusión a una parte de la esfera. Puedes empezar por el material. Dales tiempo para que dibujen esa parte de su esfera y pasa a la siguiente parte de la esfera y sus preguntas hasta que las agotes.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Vamos con la primera pregunta! ¿Por qué material podemos sustituir el vidrio? Pueden usar su pregunta específica, ¿por qué material comestible (que me lo pueda comer) vamos a sustituir el vidrio? Si alguien la quiere hacer de madera, pueden escoger un color que sea de madera. Si alguien quiere hacerlo de galleta, escojan un color del sabor de su galleta. Dibujen su esfera con el color de su material.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 7 -->
+<div id="activity-7" class="activity">
+    <div class="banner" onclick="toggleContent('presentacion_tecnologia')">
+        <div class="title">💡 Actividad 7: Presentación de Tecnología ⏰ Tiempo: Variable</div>
+        <div class="subtitle">Presenta la adición de tecnología al reto.</div>
+    </div>
+    <div id="presentacion_tecnologia" class="content">
+        <table>
+            <!-- Paso 1 -->
+            <tr>
+                <td><strong>PASO 1 (2 minutos):</strong> Reproduce la DIAPOSITIVA 15 "Presentación de Tecnología" y explica la adición al reto.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Muy bien GENIOS DEL CODE SQUAD! Luz está emocionada por ver los diseños que crearon con la metodología SCAMPER. Pero para que sus diseños sean aún más mágicos, voy a presentarles una tecnología que los va a ayudar a llevar sus innovaciones al siguiente nivel.</td>
+            </tr>
+            <!-- Paso 2 -->
+            <tr>
+                <td><strong>PASO 2 (2 minutos):</strong> Reproduce la DIAPOSITIVA 16 "Video Impresión 3D" y al final del video facilita preguntas para comprobar que entendieron bien la tecnología.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Guau, genios! ¿No es increíble lo que podemos hacer con la impresión 3D? Ahora que vimos cómo funciona, vamos a ver si entendimos bien.<br>
+                Primero, ¿recuerdan qué tenemos que hacer antes de que la impresora 3D pueda empezar a trabajar? ¡Exacto, diseñamos algo en la computadora!<br>
+                Y después, ¿qué usa la impresora 3D para crear el objeto? ¡Muy bien! Usa un filamento, que puede ser de plástico o hasta de chocolate, ¡qué divertido!<br>
+                ¿Y cómo crea la impresora el objeto? ¡Sí, lo hace capa por capa, como si estuviera dibujando en el aire!<br>
+                ¿Se imaginan crear sus propios juguetes con esta tecnología? ¡Es casi como tener una fábrica mágica en casa!<br>
+                ¡Están listos para seguir aprendiendo cosas geniales!</td>
+            </tr>
+            <!-- Paso 3 -->
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Reproduce la DIAPOSITIVA 17 "Esferas con Impresión 3D" y muestra esferas hechas con impresión 3D.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> Pues ahora vamos a mejorar sus diseños con impresión 3D. Miren estas esferas que fueron hechas con impresión 3D. Miren esta qué bonito da vueltas. Y esta que es como pepino asustado. ¿Ya vieron esta que es una figura geométrica?</td>
+            </tr>
+            <!-- Paso 4 -->
+            <tr>
+                <td><strong>PASO 4 (5-8 minutos):</strong> Reproduce la DIAPOSITIVA 18 "Integración de Tecnología" y pídeles a los Genios que hagan un diseño nuevo con impresión 3D.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Genios, ahora que ya hicieron el diseño de su esfera, vamos a dar un paso más! Justo detrás de donde crearon su diseño, van a imaginar una nueva esfera que podrán hacer con impresión 3D. ¡Qué emocionante!<br>
+                ¿Cómo se imaginan que sería el diseño de su esfera en 3D? ¿Qué materiales usarían? ¡Dejen volar su creatividad y piensen en todas las formas en las que podrían hacer su esfera aún más mágica!</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 8 -->
+<div id="activity-8" class="activity">
+    <div class="banner" onclick="toggleContent('presentacion_esferas')">
+        <div class="title">🎨 Actividad 8: Presentación de Esferas ⏰ Tiempo: 3 minutos</div>
+        <div class="subtitle">Organiza la presentación de las esferas en grupos de 3.</div>
+    </div>
+    <div id="presentacion_esferas" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (3 minutos):</strong> Reproduce la DIAPOSITIVA 19 "Presentación Esferas" y pide a los genios que se organicen en grupos de 3 y que uno a uno presente su esfera al equipo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡Genios, es momento de compartir nuestras increíbles esferas! Ahora vamos a organizarnos en grupos de tres. Cuando estén listos, cada uno de ustedes va a presentar su esfera al equipo, explicando cómo la diseñaron y qué la hace especial.<br>
+                Recuerden, todos tendrán su turno para hablar, ¡así que escuchen con atención y celebren la creatividad de sus compañeros!<br>
+                ¡Vamos a comenzar y ver esas esferas mágicas en acción!</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Actividad 9 -->
+<div id="activity-9" class="activity">
+    <div class="banner" onclick="toggleContent('conclusion_historia')">
+        <div class="title">🏁 Actividad 9: Conclusión de la Historia y Reflexión ⏰ Tiempo: 1 minuto</div>
+        <div class="subtitle">Felicita al CODE SQUAD por su trabajo.</div>
+    </div>
+    <div id="conclusion_historia" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Reproduce la DIAPOSITIVA 20 "Conclusión y Cierre" y felicita al CODE SQUAD por su trabajo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> ¡CODE SQUAD, lo hicieron increíble! Sus esferas mágicas están llenas de creatividad y cada una es única, gracias a todo lo que lograron con la S de SCAMPER. ¡Luz está súper impresionada con todo lo que hicieron!<br>
+                No puede esperar a ver lo que lograrán con las demás letras de SCAMPER. ¡Con cada paso, estamos un poco más cerca de hacer cosas aún más mágicas y especiales!<br>
+                Sigan así, genios, porque con su creatividad no hay límites a lo que pueden lograr. ¡Nos vemos en la próxima misión!</td>
+            </tr>
+        </table>
+    </div>
+</div>
+  
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Filtrar pasos con tiempo 0 según el tiempo seleccionado
+            var activities = document.querySelectorAll('.activity');
+            activities.forEach(function(activity) {
+                var steps = activity.querySelectorAll('tr');
+                steps.forEach(function(step) {
+                    var stepTime = parseInt(step.getAttribute('data-time-' + time), 10);
+                    if (stepTime === 0) {
+                        step.style.display = 'none';
+                    } else {
+                        step.style.display = 'table-row';
+                    }
+                });
+            });
+        }
+
+        // Inicializar el contenido según las selecciones por defecto
+        updateContent();
+    </script>
+</body>
+</html>
+Aftividad 2
